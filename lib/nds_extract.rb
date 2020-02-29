@@ -18,6 +18,7 @@ end
 # The return value should be like:
 #
 # { directorOne => allTheMoneyTheyMade, ... }
+
 def directors_totals(nds)
   result = {}
   director_name = directors_database[director_index][:name]
