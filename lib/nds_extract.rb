@@ -2,6 +2,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
 def gross_for_director(director_data)
+  director_index = 0 
   movie_index = 0 
   while movie_index < directors_database[director_index].length do
     director_total = directors_database[director_index][:movies][movie_index][:worldwide_gross]
@@ -10,7 +11,7 @@ def gross_for_director(director_data)
 end 
 
 def directors_totals(nds)
-  director_index = 0 
+  
   result = {}
   result[director_name] = 0
   
