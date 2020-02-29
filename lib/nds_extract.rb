@@ -16,6 +16,7 @@ end
 
 def directors_totals(nds)
   
+  director_index = 0 
   result = {}
   result[director_name] = 0
   
