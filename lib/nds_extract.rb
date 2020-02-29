@@ -12,25 +12,18 @@ def gross_for_director(director_data)
     movie_index += 1 
   end
 director_total
-end 
-
-# Write a method that, given an NDS creates a new Hash
-# The return value should be like:
-#
-# { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
+  name_index = 0
   result = {}
   result[director_name] = 0
   
-  name_index = 0
-  
   while name_index < nds[name_index].length do 
-    director_name = nds[director_index][:name]
-    name_index += nds[]
+    director_name += nds[name_index][:name]
+    result[director_name] += director_total 
+    name_index += 1
     
-    director_index += 1 
   end 
-  
-  nil
+  result 
+
 end
