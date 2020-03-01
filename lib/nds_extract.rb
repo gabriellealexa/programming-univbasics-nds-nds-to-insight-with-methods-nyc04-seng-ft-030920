@@ -16,11 +16,10 @@ end
 
 def gross_for_director(director_data)
   earnings = 0
-  director_index = 0
-  movie_index = 0 
-  while movie_index < director_data[:movies].length do
-    earnings += director_data[:movies][movie_index][:worldwide_gross]
-    movie_index += 1 
+  index = 0 
+  while index < director_data[:movies].length do
+    earnings += director_data[:movies][index][:worldwide_gross]
+    index += 1 
   end
   earnings 
 end 
